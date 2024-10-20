@@ -1,0 +1,35 @@
+.card2 {
+    border-radius: 20px;
+    width: 267.04px;
+    height: 176.96px;
+    background: var(--color-fon-5);
+   
+    z-index: 2;
+
+    .card-block {
+        padding: 16px 0 0 16px;
+
+        .card2__card-img {
+            border-radius: 100px;
+            width: 56px;
+            height: 56px;
+            background: var(--color-fon-2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .card2__card-deck {
+            padding-top: 20px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 1.06rem;
+            line-height: 124%;
+            color: var(--color-wite);
+            text-align: left;
+        }
+    }
+
+}

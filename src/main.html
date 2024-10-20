@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/components/head.html',{"title":"main"})
+
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    <section>
+      <section class="section hero-main ">
+
+          <div class="hero-main__swiper swiper" id="main_swiper1" >
+            <div class="hero-main__swiper-wrapper swiper-wrapper list-reset">
+              <div class="hero-main__swiper-slide swiper-slide">
+                <img class="img-sl" src="img/main/slider/Sl1.png" alt="img">
+                <div class="swiper-slide-title">
+                  <p class="slide-title">Дизайнерские<br> вентиляционные<br> решения</p>
+                  <p class="slide-subtitle">Подберем и произведем по индивидуальному заказу</p>
+
+                  @@include('html/components/btn2.html',{"textBtn":"Оставить заявку"})
+                  <div class="slide-text">
+                    @@include('html/components/title.html',{"Text":"Собственное производство"})
+                    @@include('html/components/title.html',{"Text":"Размеры под проект"})
+
+                  </div>
+                </div>
+              </div>
+              <div class="hero-main__swiper-slide swiper-slide">
+                <img class="img-sl" src="img/main/slider/Sl2.png" alt="img">
+                .
+                <div class="swiper-slide-title">
+                  <!-- <img class="img-sl2" src="img/main/slider/sl11.png" alt="img"> -->
+
+                  <p class="slide-title"><span>Дизайнерские</span><br> вентиляционные<br> решения</p>
+                  <p class="slide-subtitle">Подберем и произведем по индивидуальному заказу</p>
+
+                  @@include('html/components/btn2.html',{"textBtn":"Оставить заявку"})
+                  <div class="slide-text">
+                    @@include('html/components/title.html',{"Text":"Собственное производство"})
+                    @@include('html/components/title.html',{"Text":"Размеры под проект"})
+
+                  </div>
+                </div>
+              </div>
+              <div class="hero-main__swiper-slide swiper-slide">
+                <img class="img-sl" src="img/main/slider/Sl3.png" alt="img">
+                <div class="swiper-slide-title">
+
+
+                  <p class="slide-title"><span>Коллектор</span><br> вентиляционный<br> Schiberg</p>
+                  <p class="slide-subtitle">Используется в системах принудительной вентиляции </p>
+
+                  @@include('html/components/btn2.html',{"textBtn":"Оставить заявку"})
+                  <div class="slide-text">
+                    @@include('html/components/title.html',{"Text":"Собственное производство"})
+                    @@include('html/components/title.html',{"Text":"Размеры под проект"})
+
+                  </div>
+                </div>
+              </div>
+              <div class="hero-main__swiper-slide swiper-slide">
+                <img class="img-sl" src="img/main/slider/Sl4.png" alt="img">
+                <div class="swiper-slide-title">
+
+                  <p class="slide-title"><span>Коллектор</span><br> вентиляционный<br>  Schiberg</p>
+                  <p class="slide-subtitle">Используется в системах принудительной вентиляции</p>
+
+                  @@include('html/components/btn2.html',{"textBtn":"Оставить заявку"})
+                  <div class="slide-text">
+                    @@include('html/components/title.html',{"Text":"Собственное производство"})
+                    @@include('html/components/title.html',{"Text":"Размеры под проект"})
+
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="swiper-pagination " id="main-swiper-pagination1"></div>
+
+          </div>
+
+
+        </div>
+
+
+      </section>
+<section class="section section2-main">
+  <div class="section2-conteiner">
+    <div class="section2-block__left">
+      <!-- <div class="section2-block__desc"> -->
+        <h3 class="section2-block__desc-title">Обеспечиваем ваш комфорт</h3>
+      <!-- </div> -->
+      <p class="section2-block__desc-subtitle">Не нарушаем дизайн интерьера функциональными<br> решениями</p>
+<div class="section2-block__image">
+  @@include('html/components/card2.html', {"urlImg":  "/img/main/B12.svg", "desc": "Более 20 собственных<br> продуктов"})
+  @@include('html/components/card2.html', {"urlImg":  "/img/main/hours.svg", "desc": "Более 20 собственных<br> продуктов"})
+  @@include('html/components/card2.html', {"urlImg":  "/img/main/IR.svg", "desc": "Более 20 собственных<br> продуктов"})
+  @@include('html/components/card2.html', {"urlImg":  "/img/main/Sp.svg", "desc": "Более 20 собственных<br> продуктов"})
+</div>
+<div class="form-container">
+  <div class="form-group">
+
+      <input class = "form-group-name"  type="text" id="name" name="name" placeholder="Имя">
+  </div>
+  <div class="form-group">
+
+      <input class = "form-group-tel" type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99">
+  </div>
+  <button class= "form-group-button" click="downloadFile()"><span class="btn-text-first"> Скачать каталог.pdf</span><span class="btn-text-second">Размер файла 15Мб</span></button>
+</div>
+
+    </div>
+    <div class="section2-block__right swiper" id="section2-swiper">
+      <div class="swiper-wrapper">
+        <div class="custom-card-swiper swiper-slide">
+
+          <img src="img/main/BL2.png" alt="Image" class="custom-card__image" />
+          <div class="custom-card__content">
+            <span class="custom-card__text">
+              @@include('html/components/title.html',{"Text":"Собственное производство в России"})
+
+            </span>
+          </div>
+        </div>
+        <div class="custom-card-swiper swiper-slide">
+
+          <img src="img/main/BL2.png" alt="Image" class="custom-card__image" />
+          <div class="custom-card__content">
+            <span class="custom-card__text">
+              @@include('html/components/title.html',{"Text":"Собственное производство в России"})
+
+            </span>
+          </div>
+        </div>
+      </div>
+      <div  id="section2-swiper-button-next">
+        <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="22.5" cy="22.5" r="22" stroke="white"/>
+          <path d="M17.2426 27.5561L28.5563 16.2424M28.5563 16.2424H20.0711M28.5563 16.2424V24.7277" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+      </div>
+
+
+      </div>
+
+    </div>
+</div>
+</section>
+
+      <section class="section section3-main">
+        <div class="section3-conteiner">
+          <h2 class="section3-main-title">Каталог решений</h2>
+          <ul class="section3-list">
+            <li class="section3-item">
+              @@include('html/components/card3.html',{"urlImg":"img/main/Bl3/Sten.png","link":"Для стен"})
+
+            </li>
+            <li class="section3-item">
+              @@include('html/components/card3.html',{"urlImg":"img/main/Bl3/Treck.png","link":"Трековые диффузоры"})
+
+            </li>
+            <li class="section3-item">
+              @@include('html/components/card3.html',{"urlImg":"img/main/Bl3/Potol.png","link":"Для натяжного потолка"})
+
+            </li>
+            <li class="section3-item">
+              @@include('html/components/card3.html',{"urlImg":"img/main/Bl3/Sten.png","link":"Для потолка из
+              гипсокартона"})
+
+            </li>
+            <li class="section3-item">
+              @@include('html/components/card3.html',{"urlImg":"img/main/Bl3/Gips.png","link":"Для санузлов и ванных
+              комнат"})
+
+            </li>
+            <li class="section3-item">
+              @@include('html/components/card3.html',{"urlImg":"img/main/Bl3/Mebel.png","link":"Для мебели"})
+
+            </li>
+
+          </ul>
+
+
+        </div>
+
+
+      </section>
+      <section class="section section4-main">
+        <div class="section4-conteiner">
+          <div class="section4__left"></div>
+          <div class="section4__right"></div>
+        </div>
+      </section>
+      <section class="section section4-main">
+        <div class="section5-conteiner">
+          <div class="section5__left"></div>
+          <div class="section5__right"></div>
+        </div>
+      </section>
+      <section class="section section6-main">
+        <div class="section6-conteiner">
+          <div class="section6__up">
+            <div class="section6__left">
+              <div class="section6-block__right swiper" id="section2-swiper">
+                <div class="swiper-wrapper">
+                  <div class="custom-card-swiper2 swiper-slide">
+
+                    <img src="img/main/BL2.png" alt="Image" class="custom-card__image" />
+
+                  </div>
+                  <div class="custom-card-swiper swiper-slide">
+
+                    <img src="img/main/BL2.png" alt="Image" class="custom-card__image" />
+
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+
+                </div>
+            </div>
+            <div class="section6__right"></div>
+          </div>
+          <div class="section6__down"></div>
+        </div>
+      </section>
+      </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+
+</html>

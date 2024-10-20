@@ -1,0 +1,21 @@
+.box-logo {
+  display: flex;
+
+
+
+.link-logo {
+
+  .logo-img{
+    width: 107px;
+    height: 19px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--color-logo);
+  }
+}
+}
