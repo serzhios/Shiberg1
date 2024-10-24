@@ -1,7 +1,8 @@
 .card3 {
-  width: 22.69rem;
-  height: 22.69rem;
-
+  // width: 22.69rem;
+  // height: 22.69rem;
+display: grid;
+grid-template-columns: 1fr 1fr
   // position: relative;
   &__img {
     display: flex;

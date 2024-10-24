@@ -4,13 +4,13 @@ html {
   // padding: 0 auto;
 }
 
- body, html {
-  height: 100%;
-  margin: 0;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
+//  body, html {
+//   height: 100%;
+//   margin: 0;
+//   display: grid;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 *,
 *::before,
@@ -26,7 +26,16 @@ a {
 a:focus-visible {
   outline: none;
 }
+button{
+  border: none;
+  cursor: pointer;
+}
 
+
+input::placeholder {
+  margin: 0; /* Убирает отступы */
+  padding: 0; /* Убирает отступы */
+}
 h1,
 h2,
 h3,
@@ -35,17 +44,22 @@ p {
   padding: 0;
   margin: 0;
 }
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
 
 img {
   max-width: 100%;
 }
 
 body {
-
-
+  // text-align: center;
+  width: 100%; /* Ширина блока динамическая */
+  margin: 0 auto;
   min-width: 340px;
   font-family: "Roboto", sans-serif;
-  background-color: #fff;
+  // background-color: #fff;
 }
 
 .overlay {
@@ -91,9 +105,10 @@ body {
 }
 
 .container {
-  max-width: 1260px;
+  max-width: 1200px;
   padding: 0 50px;
   margin: 0 auto;
+
 }
 
 :root {
@@ -107,14 +122,18 @@ body {
   --color-text-header-h1: #000000;
   --color-text1: #06828E;
   --color-text2: #1D1D1B;
+  --color-text3: #0f0f0f;
   --color-text-contacts-beac: #393331;
   --color-fon: #15222A;
   --color-fon-1: #434d54;
   --color-fon-2: #06828E;
-  --color-fon-3: #15222A;    
-  --color-fon-3: #000;
+  --color-fon-3: #15222A;
+  --color-fon-31: #000;
   --color-fon-4: #bfbfbf;
   --color-fon-5: rgba(255, 255, 255, 0.2);
+  --color-fon-6: #263746;
+  --color-fon-7: #4d5969;
+  --color-fon-8: #4d5969;
   --color-sec-beck-2: #faf5f0;
   --color-sec-border: #9e836e;
   --color-address: #b6db91;

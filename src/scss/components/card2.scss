@@ -1,14 +1,16 @@
 .card2 {
+    width: 100%;
     border-radius: 20px;
-    width: 267.04px;
-    height: 176.96px;
+    // width: 16.69rem;
+    // height: 11.06rem;
     background: var(--color-fon-5);
-   
+
     z-index: 2;
 
     .card-block {
-        padding: 16px 0 0 16px;
-
+        padding: 16px 0 43px 16px;
+display: grid;
+grid-template-rows: 1fr 1fr;
         .card2__card-img {
             border-radius: 100px;
             width: 56px;
@@ -22,7 +24,7 @@
         }
 
         .card2__card-deck {
-            padding-top: 20px;
+            padding-top: 26px;
             font-family: var(--font-family);
             font-weight: 400;
             font-size: 1.06rem;
