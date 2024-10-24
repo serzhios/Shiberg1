@@ -1,10 +1,34 @@
 import {sliderMain1} from "./module/sliderMain1.js"
 import {sliderMain2} from "./module/sliderMain2.js"
+import {sliderMain3} from "./module/sliderMain3.js"
+import { answerMain1 } from "./module/answerMaein1.js";
+import { categoryMain1 } from "./module/categoryMain1.js";
+import{documMain1} from "./module/documMain1.js"
+import { thumbnailMain } from "./module/thumbnailMain.js";
+document.querySelectorAll('.section6-list').forEach(function(item) {
+    item.addEventListener('click', function() {
+        this.classList.toggle('active'); // Добавляем/удаляем класс "active" при клике
+    });
+});
 
 
 
+// const buttons = document.querySelectorAll('.section7-categories-list');
 
+// buttons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         // Удаляем класс "active" у всех кнопок
+//         buttons.forEach(btn => btn.classList.remove('active'));
+//         // Добавляем класс "active" к нажатой кнопке
+//         button.classList.add('active');
+//     });
+// });
 
+answerMain1()
 sliderMain1()
 sliderMain2()
+sliderMain3()
+categoryMain1()
+documMain1()
+thumbnailMain()
 
