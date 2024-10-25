@@ -5,6 +5,11 @@ import { answerMain1 } from "./module/answerMaein1.js";
 import { categoryMain1 } from "./module/categoryMain1.js";
 import{documMain1} from "./module/documMain1.js"
 import { thumbnailMain } from "./module/thumbnailMain.js";
+import{sliderMain4} from "./module/sliderMain4.js"
+
+
+
+
 document.querySelectorAll('.section6-list').forEach(function(item) {
     item.addEventListener('click', function() {
         this.classList.toggle('active'); // Добавляем/удаляем класс "active" при клике
@@ -31,4 +36,5 @@ sliderMain3()
 categoryMain1()
 documMain1()
 thumbnailMain()
+sliderMain4()
 
