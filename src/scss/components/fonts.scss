@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'HelveticaNeueCyr';
-    src: local("HelveticaNeueCyr-Regular"),
+    src: local("HelveticaNeueCyr-Roman"),
      url('../fonts/HelveticaNeueCyr-Regular.woff2') format('woff2'),
         url('../fonts/HelveticaNeueCyr-Regular.woff') format('woff');
     font-weight: 400;
@@ -79,7 +79,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open-Sans';
     src: local("OpenSans-SemiBold"),
     url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
         url('../fonts/OpenSans-SemiBold.woff') format('woff');
@@ -99,7 +99,7 @@
 }
 
 @font-face {
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas-Neue';
     src: local("BebasNeueRegular"),
     url('../fonts/BebasNeueRegular.woff2') format('woff2'),
         url('../fonts/BebasNeueRegular.woff') format('woff');
