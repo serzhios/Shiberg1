@@ -106,11 +106,18 @@ body {
 
 .container {
   max-width: 1200px;
-  padding: 0 50px;
+  // padding: 0 50px;
   margin: 0 auto;
 
 }
-
+.content {
+ 
+  max-width:1140px;
+  margin:0 auto;
+}
+.section{
+  padding: 100px 0 100px 0;
+}
 :root {
   --font-family: "Montserrat", sans-serif;
   --second-family: "Helvetica Neue", sans-serif;
@@ -134,6 +141,7 @@ body {
   --color-fon-6: #263746;
   --color-fon-7: #4d5969;
   --color-fon-8: #4d5969;
+  --color-fon-9: #EDEDED;
   --color-sec-beck-2: #faf5f0;
   --color-sec-border: #9e836e;
   --color-address: #b6db91;
