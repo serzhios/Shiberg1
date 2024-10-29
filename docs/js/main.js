@@ -6,7 +6,7 @@ import { categoryMain1 } from "./module/categoryMain1.js";
 import{documMain1} from "./module/documMain1.js"
 import { thumbnailMain } from "./module/thumbnailMain.js";
 import{sliderMain4} from "./module/sliderMain4.js"
-
+import { kwis } from "./module/kwis.js";
 
 
 
@@ -37,4 +37,4 @@ categoryMain1()
 documMain1()
 thumbnailMain()
 sliderMain4()
-
+kwis()
