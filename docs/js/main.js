@@ -7,6 +7,7 @@ import{documMain1} from "./module/documMain1.js"
 import { thumbnailMain } from "./module/thumbnailMain.js";
 import{sliderMain4} from "./module/sliderMain4.js"
 import { kwis } from "./module/kwis.js";
+// import { delyveryToggle } from "./module/delyvery.js";
 
 
 
@@ -16,7 +17,15 @@ document.querySelectorAll('.section6-list').forEach(function(item) {
     });
 });
 
-
+// function toggle(selected) {
+//     const options = document.querySelectorAll('.toggle-option');
+//     options.forEach(option => {
+//         option.classList.remove('active');
+//         option.classList.add('inactive');
+//     });
+//     selected.classList.add('active');
+//     selected.classList.remove('inactive');
+// }
 
 // const buttons = document.querySelectorAll('.section7-categories-list');
 
@@ -28,7 +37,7 @@ document.querySelectorAll('.section6-list').forEach(function(item) {
 //         button.classList.add('active');
 //     });
 // });
-
+// toggle()
 answerMain1()
 sliderMain1()
 sliderMain2()
@@ -38,3 +47,4 @@ documMain1()
 thumbnailMain()
 sliderMain4()
 kwis()
+// delyveryToggle()
