@@ -370,8 +370,10 @@
         grid-template-columns: repeat(2, 1fr);
 
         .section4__left {
-          position:relative;
+          position: relative;
           text-align: left;
+          width: 43.3125rem;
+          height: 27.0625rem;
 
           h3 {
             font-family: var(--second-family);
@@ -389,32 +391,627 @@
             line-height: 124%;
             color: #000;
           }
-          .block {
-            position:absolute;
-            top: 50%;
-            left: 0;
-            width: 201px;
+
+          .block-flanec {
+            position: absolute;
+            bottom: 17px;
+            left: 41px;
+            transform: translateX(-50%);
+            width: 30px;
+            /* Размер внешнего круга */
+            height: 30px;
+            /* Размер внешнего круга */
+            background-color: transparent;
+            // border: 2px solid rgb(217, 17, 17);
+            /* Толщина и цвет границы */
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+
+            // visibility: hidden;
+            .left-flanec {
+
+              .block {
+                // visibility: hidden;
+
+                position: absolute;
+                bottom: 105px;
+                left: -15px;
+                width: 201px;
+                height: 50px;
+                border: 1px solid #000;
+
+                .line {
+                  content: '';
+                  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+                  position: absolute;
+                  left: 30px;
+                  /* Центрируем линию относительно блока */
+                  top: 100%;
+                  /* Начинаем от нижней границы блока */
+                  transform: translateX(-50%);
+                  /* Корректируем смещение */
+                  width: 1px;
+                  /* Толщина линии */
+                  height: 82px;
+                  /* Длина линии */
+                  background-color: #000;
+                  /* Цвет линии */
+                }
+
+                .circle {
+                  position: absolute;
+                  top: 130px;
+                  left: 30px;
+                  transform: translateX(-50%);
+                  width: 10px;
+                  /* Размер внешнего круга */
+                  height: 10px;
+                  /* Размер внешнего круга */
+                  background-color: transparent;
+                  border: 2px solid black;
+                  /* Толщина и цвет границы */
+                  border-radius: 50%;
+                }
+
+                .circle::after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 3px;
+                  /* Размер внутреннего круга */
+                  height: 3px;
+                  /* Размер внутреннего круга */
+                  background-color: black;
+                  border-radius: 50%;
+                }
+
+                .block-text {
+                  font-family: var(--font-family);
+                  font-weight: 300;
+                  font-size: 4px;
+                  color: #1d1d1b;
+                  padding: 8px 0 0 10px;
+                }
+
+                .block-img {
+                  position: absolute;
+                  bottom: 44px;
+                  left: 120px;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+
+          .block-flanec .left-flanec {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          .block-flanec:hover .left-flanec {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .block-kollector {
+            position: absolute;
+            top: 1;
+            left: 41px;
+            // transform: translateX(-50%);
+            transform: translate(200px, -160px);
+
+            width: 30px;
+            /* Размер внешнего круга */
+            height: 30px;
+            /* Размер внешнего круга */
+            background-color: transparent;
+            // border: 2px solid rgb(217, 17, 17);
+            /* Толщина и цвет границы */
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+
+            // visibility: hidden;
+            .left-kollector {
+
+              .block {
+                // visibility: hidden;
+
+                position: absolute;
+                top: 95px;
+                right: 5px;
+                width: 245px;
+                height: 50px;
+                border: 1px solid #000;
+
+                .line {
+                  content: '';
+                  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+                  position: absolute;
+                  left: 35px;
+                  /* Центрируем линию относительно блока */
+                  top: 100%;
+                  /* Начинаем от нижней границы блока */
+                  // transform: translate(50px, 50px);
+                  transform: translate(200px, -130px);
+                  //
+                  /* Корректируем смещение */
+                  width: 1px;
+                  /* Толщина линии */
+                  height: 82px;
+                  /* Длина линии */
+                  background-color: #000;
+                  /* Цвет линии */
+                }
+
+                .circle {
+                  position: absolute;
+                  top: 30px;
+                  left: 30px;
+                  // transform: translateX(-50%);
+                  transform: translate(200px, -120px);
+
+                  width: 10px;
+                  /* Размер внешнего круга */
+                  height: 10px;
+                  /* Размер внешнего круга */
+                  background-color: transparent;
+                  border: 2px solid black;
+                  /* Толщина и цвет границы */
+                  border-radius: 50%;
+                }
+
+                .circle::after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 3px;
+                  /* Размер внутреннего круга */
+                  height: 3px;
+                  /* Размер внутреннего круга */
+                  background-color: black;
+                  border-radius: 50%;
+                }
+
+                .block-text {
+                  font-family: var(--font-family);
+                  font-weight: 300;
+                  font-size: 4px;
+                  color: #1d1d1b;
+                  padding: 8px 0 0 10px;
+                }
+
+                .block-img {
+                  position: absolute;
+                  bottom: 44px;
+                  left: 90px;
+                  width: 90%;
+                  height: 90%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+
+          .block-kollector .left-kollector {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          .block-kollector:hover .left-kollector {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .block-adapter {
+            position: absolute;
+            top: 1;
+            left: 150px;
+            // transform: translateX(-50%);
+            transform: translate(200px, -55px);
+
+            width: 50px;
+            /* Размер внешнего круга */
             height: 50px;
-            border: 1px solid #000;
-            .block-text{
-              font-family: var(--font-family);
-              font-weight: 300;
-              font-size: 4px;
-              color: #1d1d1b;
-              padding:4px 0  0 10px;
+            /* Размер внешнего круга */
+            background-color: transparent;
+            // border: 2px solid rgb(217, 17, 17);
+            /* Толщина и цвет границы */
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+
+            // visibility: hidden;
+            .left-adapter {
+
+              .block {
+                // visibility: hidden;
+
+                position: absolute;
+                top: 5px;
+                left: 90px;
+                width: 245px;
+                height: 50px;
+                border: 1px solid #000;
+
+                .line {
+                  content: '';
+                  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+                  position: absolute;
+                  left: -25px;
+                  /* Центрируем линию относительно блока */
+                  bottom: 12px;
+                  /* Начинаем от нижней границы блока */
+                  // transform: translate(50px, 50px);
+                  // transform: translate(100px, -120px);
+                  transform: rotate(90deg);
+                  //
+                  /* Корректируем смещение */
+                  width: 1px;
+                  /* Толщина линии */
+                  height: 48px;
+                  /* Длина линии */
+                  background-color: #000;
+                  /* Цвет линии */
+                }
+
+                .circle {
+                  position: absolute;
+                  top: 30px;
+                  left: 30px;
+                  // transform: translateX(-50%);
+                  transform: translate(-85px, -24px);
+
+                  width: 10px;
+                  /* Размер внешнего круга */
+                  height: 10px;
+                  /* Размер внешнего круга */
+                  background-color: transparent;
+                  border: 2px solid black;
+                  /* Толщина и цвет границы */
+                  border-radius: 50%;
+                }
+
+                .circle::after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 3px;
+                  /* Размер внутреннего круга */
+                  height: 3px;
+                  /* Размер внутреннего круга */
+                  background-color: black;
+                  border-radius: 50%;
+                }
+
+                .block-text {
+                  font-family: var(--font-family);
+                  font-weight: 300;
+                  font-size: 4px;
+                  color: #1d1d1b;
+                  padding: 8px 0 0 10px;
+                }
+
+                .block-img {
+                  position: absolute;
+                  bottom: 44px;
+                  left: 90px;
+                  width: 90%;
+                  height: 90%;
+                  object-fit: cover;
+                }
+              }
             }
-            .block-img{
-              position:absolute;
-              bottom: 34px;
-              left: 110px;
-              width: 100%;
-              height: 100%;
-              object-fit: contain;
+          }
+
+          .block-adapter .left-adapter {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          .block-adapter:hover .left-adapter {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .block-zenit {
+            position: absolute;
+            top: 80%;
+            left: 180px;
+            // transform: translateX(-50%);
+            transform: translate(200px, -55px);
+
+            width: 50px;
+            /* Размер внешнего круга */
+            height: 50px;
+            /* Размер внешнего круга */
+            background-color: transparent;
+            // border: 2px solid rgb(217, 17, 17);
+            /* Толщина и цвет границы */
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+
+            // visibility: hidden;
+            .left-zenit {
+
+              .block {
+                // visibility: hidden;
+
+                position: absolute;
+                top: 5px;
+                left: 90px;
+                width: 150px;
+                height: 50px;
+                border: 1px solid #000;
+
+                .line {
+                  content: '';
+                  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+                  position: absolute;
+                  left: -25px;
+                  /* Центрируем линию относительно блока */
+                  bottom: 12px;
+                  /* Начинаем от нижней границы блока */
+                  // transform: translate(50px, 50px);
+                  // transform: translate(100px, -120px);
+                  transform: rotate(90deg);
+                  //
+                  /* Корректируем смещение */
+                  width: 1px;
+                  /* Толщина линии */
+                  height: 48px;
+                  /* Длина линии */
+                  background-color: #000;
+                  /* Цвет линии */
+                }
+
+                .circle {
+                  position: absolute;
+                  top: 30px;
+                  left: 30px;
+                  // transform: translateX(-50%);
+                  transform: translate(-85px, -24px);
+
+                  width: 10px;
+                  /* Размер внешнего круга */
+                  height: 10px;
+                  /* Размер внешнего круга */
+                  background-color: transparent;
+                  border: 2px solid black;
+                  /* Толщина и цвет границы */
+                  border-radius: 50%;
+                }
+
+                .circle::after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 3px;
+                  /* Размер внутреннего круга */
+                  height: 3px;
+                  /* Размер внутреннего круга */
+                  background-color: black;
+                  border-radius: 50%;
+                }
+
+                .block-text {
+                  font-family: var(--font-family);
+                  font-weight: 300;
+                  font-size: 4px;
+                  color: #1d1d1b;
+                  padding: 8px 0 0 10px;
+                }
+
+                .block-img {
+                  position: absolute;
+                  bottom: 44px;
+                  left: 90px;
+                  width: 90%;
+                  height: 90%;
+                  object-fit: cover;
+                }
+              }
             }
+          }
+
+          .block-zenit .left-zenit {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          .block-zenit:hover .left-zenit {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .block-vozduh {
+            position: absolute;
+            top: 140px;
+            right: 155px;
+            transform: translateX(-50%);
+            width: 30px;
+            /* Размер внешнего круга */
+            height: 30px;
+            /* Размер внешнего круга */
+            background-color: transparent;
+            // border: 2px solid rgb(217, 17, 17);
+            /* Толщина и цвет границы */
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+
+            // visibility: hidden;
+            .left-vozduh {
+
+              .block {
+                // visibility: hidden;
+
+                position: absolute;
+                bottom: 55px;
+                left: -15px;
+                width: 180px;
+                height: 50px;
+                border: 1px solid #000;
+
+                .line {
+                  content: '';
+                  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+                  position: absolute;
+                  left: 30px;
+                  /* Центрируем линию относительно блока */
+                  top: 100%;
+                  /* Начинаем от нижней границы блока */
+                  transform: translateX(-50%);
+                  /* Корректируем смещение */
+                  width: 1px;
+                  /* Толщина линии */
+                  height: 38px;
+                  /* Длина линии */
+                  background-color: #000;
+                  /* Цвет линии */
+                }
+
+                .circle {
+                  position: absolute;
+                  top: 85px;
+                  left: 30px;
+                  transform: translateX(-50%);
+                  width: 10px;
+                  /* Размер внешнего круга */
+                  height: 10px;
+                  /* Размер внешнего круга */
+                  background-color: transparent;
+                  border: 2px solid black;
+                  /* Толщина и цвет границы */
+                  border-radius: 50%;
+                }
+
+                .circle::after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 3px;
+                  /* Размер внутреннего круга */
+                  height: 3px;
+                  /* Размер внутреннего круга */
+                  background-color: black;
+                  border-radius: 50%;
+                }
+
+                .block-text {
+                  font-family: var(--font-family);
+                  font-weight: 300;
+                  font-size: 4px;
+                  color: #1d1d1b;
+                  padding: 8px 0 0 10px;
+                }
+
+                .block-img {
+                  position: absolute;
+                  bottom: 25px;
+                  left: 120px;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+
+          .block-vozduh .left-vozduh {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          .block-vozduh:hover .left-vozduh {
+            visibility: visible;
+            opacity: 1;
           }
 
         }
 
+        .section4__right {
+
+          .right-content {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 11px;
+
+            .right__block1 {
+              display: grid;
+              grid-template-rows: 1fr 1fr;
+              border: 1px solid #000;
+              padding: 20px;
+              // gap: 17px;
+              text-align: left;
+
+              &-up {
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: space-between;
+                // display: flex;
+                // flex-direction: column;
+
+                .block1-up-p {
+                  font-family: var(--font-family);
+                  font-weight: 700;
+                  font-size: 19px;
+                  line-height: 126%;
+                  color: #000;
+                }
+
+                .blocks {
+                  width: 30px;
+                  height: 30px;
+                  border: 1px solid #000;
+                  background: #06828e;
+                  text-align: right;
+                }
+              }
+
+              .block1-down {
+                p {
+                  font-family: var(--font-family);
+                  font-weight: 400;
+                  font-size: 17px;
+                  line-height: 124%;
+                  color: #000;
+                }
+              }
+            }
+
+            .right__block1:hover {
+              background: #000;
+
+              .blocks {
+                background: #fff;
+              }
+
+              p {
+                color: #fff;
+              }
+            }
+          }
+        }
       }
 
     }
@@ -564,7 +1161,7 @@
             grid-template-rows: repeat(3 1fr);
             // display: flex;
             // flex-direction: column;
-            border-radius: 0.94rem;
+            border-radius: .94rem;
             // width: 39.25rem;
             // height: 33.3125rem;
             padding: 36px;
@@ -700,7 +1297,7 @@
             // grid-template-rows: repeat(3 1fr);
             // display: flex;
             // flex-direction: column;
-            border-radius: 0.94rem;
+            border-radius: .94rem;
             // width: 39.25rem;
             // height: 33.3125rem;
             padding: 36px;
@@ -2054,7 +2651,7 @@
             .certificate-swiper {
               position: relative;
               // position: relative;
-              left: 0%;
+              left: 1%;
               width: 39.5625rem;
               // width: 633px;
               height: 320px;
@@ -2101,9 +2698,9 @@
             position: absolute;
             // bottom: 0;
             bottom: 83px;
-            right: 5px;
+            right: 0px;
             width: 140px;
-            height: 40px;
+            height: 250px;
             background: transparent;
             // background:#06828e;
             transform: scaleX(-1);
@@ -2114,12 +2711,13 @@
           }
 
 
+
           .certificate-video::after {
             content: "";
             position: absolute;
             // top: 12.5rem;
-            bottom: 0px;
-            right: 150px;
+            bottom: -1px;
+            right: 160px;
             width: 2.5rem;
             height: 2.5rem;
             background: transparent;
@@ -2141,7 +2739,7 @@
 
             position: absolute;
             bottom: 14%;
-            right: -20px;
+            right: -10px;
             z-index: 2;
             border: .625rem solid #fff;
 
@@ -2170,7 +2768,7 @@
                 border: .125rem solid #fff;
                 position: relative;
                 bottom: 0;
-                right: .625rem;
+                right: 12px;
               }
 
               #prev-button1 {
@@ -2214,6 +2812,476 @@
 
       }
 
+    }
+  }
+
+  .delivery-main {
+    .delivery-conteiner {
+      .delivery-content {
+        .delivery-up {
+          .toggle-switch {
+            display: flex;
+            width: 210px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+          }
+
+          .toggle-option {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            margin: 2px;
+            transition: background-color 0.3s, color 0.3s;
+          }
+
+          .toggle-option.active {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            border-radius: 25px;
+          }
+
+          .toggle-option.inactive {
+            color: gray;
+          }
+        }
+
+        .delivery-down {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding-top: 20px;
+          gap: 64px;
+
+          .delivery__left {
+            text-align: left;
+
+            .left-title {
+              font-family: var(--second-family);
+              font-weight: 700;
+              font-size: 32px;
+              line-height: 116%;
+              color: #000;
+              padding-bottom: 50px;
+            }
+
+            .left-text {
+              font-family: var(--font-family);
+              font-weight: 400;
+              font-size: 17px;
+              line-height: 153%;
+              color: #000;
+            }
+
+            .left-text2 {
+              font-family: var(--font-family);
+              font-weight: 600;
+              font-size: 17px;
+              line-height: 124%;
+              color: #000;
+            }
+
+            .left-text3 {
+              font-family: var(--font-family);
+              font-weight: 400;
+              font-size: 17px;
+              line-height: 153%;
+              color: #000;
+            }
+
+            .left-text4 {
+              font-weight: 600;
+              font-family: var(--font-family);
+
+              font-size: 17px;
+              line-height: 153%;
+              color: #000;
+            }
+
+            .left-item {
+              padding: 29px 0 40px 0;
+              display: grid;
+              grid-template-columns: 1fr auto;
+              gap: 10px;
+
+              .item-block1 {
+                padding: 15px 11px 22px 16px;
+                border-radius: 13px;
+                width: 100%;
+                height: 100%;
+                background: #06828e;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                align-items: center;
+                gap: 16px;
+                text-align: left;
+
+                p {
+                  font-family: var(--font-family);
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 150%;
+                  color: #fff;
+                }
+              }
+
+              .item-block2 {
+                padding: 28px 20px 21px 18px;
+                border: 1px solid #06828e;
+                border-radius: 13px;
+                width: 275px;
+                height: 91px;
+                background: #fff;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                align-items: center;
+                text-align: left;
+
+                p {
+                  font-family: var(--font-family);
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 150%;
+                  color: #000;
+                }
+              }
+            }
+
+            .left-text2 {
+              font-family: var(--font-family);
+              font-weight: 600;
+              font-size: 17px;
+              line-height: 124%;
+              color: #000;
+            }
+
+            .left-text3 {
+              padding: 20px 0 20px 0;
+              font-family: var(--font-family);
+              font-weight: 400;
+              font-size: 17px;
+              line-height: 153%;
+              color: #000;
+            }
+          }
+
+          .delivery__right {
+            position: relative;
+
+            .right-img {
+              position: relative;
+              width: auto;
+              height: 29.375rem;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+
+              .right-svg {
+                position: absolute;
+                bottom: 30%;
+                right: 52%;
+                // width: 100%;
+                // height: 100%;
+
+                .right-circle {
+                  position: absolute;
+                  top: 39%;
+                  left: 50%;
+                  border-radius: 100%;
+                  transform: translate(-50%, -50%);
+                  width: 35px;
+                  height: 35px;
+                  background: #fff;
+                  z-index: 10;
+                }
+              }
+
+
+            }
+
+            .right-title {
+
+              position: absolute;
+              top: 50%;
+              left: 70%;
+              // transform: translate(-50%, -50%);
+              font-family: var(--font-family);
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 150%;
+              color: #000;
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+
+  .invitation-main {
+    background: #15222a;
+    padding: 70px 30px 53px 30px;
+
+    .invitation-conteiner {
+      .invitation-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+
+        .invitation__left {
+          display: grid;
+          grid-template-rows: 1fr 2fr;
+
+          .invitation-title {
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 116%;
+            color: #fff;
+          }
+
+          .invitation-adress {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 153%;
+            color: #fff;
+            padding: 30px 0 0 0;
+
+            .invitation-link {
+              font-family: var(--font-family);
+              font-weight: 700;
+              font-size: 17px;
+              line-height: 153%;
+              color: #fff;
+            }
+          }
+
+          .invitation-network {
+            padding: 20px 0 20px 0;
+          }
+
+          .invitation-list {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 153%;
+            color: #fff;
+
+            .invitation-link {
+              font-family: var(--font-family);
+
+              font-size: 17px;
+              line-height: 153%;
+              color: #fff;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .invitation__right {
+          .gallery-img1::after {
+            // content: '';
+            width: 50px;
+            height: 2px;
+            position: absolute;
+            top: 100%;
+            right: 100%;
+            background: #8f0707;
+            z-index: 1;
+          }
+
+          .gallery {
+            display: grid;
+            // gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            max-width: 600px;
+            position: relative;
+            // display: inline-block;
+            // margin: 20px;
+          }
+
+          .gallery img {
+            width: 100%;
+            display: block;
+            border-radius: 5px;
+          }
+
+          /* Индивидуальная настройка размеров */
+          .galley-img1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            width: 249px;
+            height: 151px;
+            margin-left: 30px;
+            position: relative;
+            // margin-right: 10px;
+            // padding: 0 28px 29px 0;
+
+          }
+
+          .gallery-img2 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            width: 295px;
+            height: 150px;
+            // padding-left: 20px;
+            // margin-left: 10px;
+            // position: relative;
+
+            margin-top: 30px;
+          }
+
+          .gallery-img3 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            width: 186px;
+            height: 168px;
+            text-align: left;
+            // padding-top: 10px;
+            margin-left: 110px;
+          }
+
+          .gallery-img4 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            width: 264px;
+            height: 140px;
+            margin-top: 20px;
+            margin-left: 20px;
+            // padding-bottom: 40px;
+          }
+
+
+
+          .gallery::before,
+          .galleru::after {
+            position: relative;
+            // display: inline-block;
+            // margin: 20px;
+          }
+          .gallery-span1 {
+            // content: '';
+            position: absolute;
+            bottom: -15px;
+            right: -10px;
+            width: 2px;
+            /* Ширина линии слева */
+            height: 234px;
+            background: #fff;
+            z-index: 1;
+            // margin-left: 10px;
+            // margin-right: 10px;
+          }
+          .gallery-span4 {
+            // content: '';
+            position: absolute;
+            bottom: 11px;
+            right:48%;
+            width: 2px;
+            /* Ширина линии слева */
+            height: 148px;
+            background: #fff;
+            z-index: 1;
+            // margin-left: 10px;
+            // margin-right: 10px;
+          }
+          .gallery-span4::before {
+            content: '';
+            position: absolute;
+            bottom: 15px;
+            left:134px;
+            width: 2px;
+            /* Ширина линии слева */
+            height: 270px;
+            transform: rotate(90deg);
+            background: #fff;
+            z-index: 1;
+            // margin-left: 10px;
+            // margin-right: 10px;
+          }
+          .gallery-span4::after {
+            content: '';
+
+            // transform: rotate(90deg);
+            position: absolute;
+            bottom: 0px;
+            left: -6px;
+            width: 15px;
+            /* Ширина линии слева */
+            height: 15px;
+            background: #fff;
+            z-index: 1;
+          }
+          .gallery-span2 {
+            // content: '';
+            position: absolute;
+            bottom: 185px;
+            right: 148px;
+            width: 2px;
+            transform: rotate(90deg);
+            /* Ширина линии слева */
+            height: 294px;
+            background: #fff;
+            z-index: 1;
+            // margin-bottom: 10px;
+          }
+          .gallery-span2::after {
+            content: '';
+
+            // transform: rotate(90deg);
+            position: absolute;
+            bottom: 0px;
+            left: -6px;
+            width: 15px;
+            /* Ширина линии слева */
+            height: 15px;
+            background: #fff;
+            z-index: 1;
+          }
+          .gallery-span1::before {
+            content: '';
+
+            transform: rotate(90deg);
+            // transform: translateX(50%);
+            position: absolute;
+            top: 105px;
+            right: 129px;
+            width: 2px;
+            /* Ширина линии слева */
+            height: 255px;
+            background: #fff;
+            z-index: 1;
+          }
+          .gallery-span1::after {
+            content: '';
+
+            transform: rotate(90deg);
+            position: absolute;
+            top: 225px;
+            right: 245px;
+            width: 15px;
+            /* Ширина линии слева */
+            height: 15px;
+            background: #fff;
+            z-index: 1;
+          }
+
+          //   .gallery::after {
+          //     height: 2px; /* Высота линии сверху */
+          //     width: 100%;
+          //     background: #8f0707;
+          //     top: 10px;
+          //     left: 50%;
+          // }
+        }
+      }
     }
   }
 }
