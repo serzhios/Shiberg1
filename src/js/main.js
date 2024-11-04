@@ -7,6 +7,7 @@ import{documMain1} from "./module/documMain1.js"
 import { thumbnailMain } from "./module/thumbnailMain.js";
 import{sliderMain4} from "./module/sliderMain4.js"
 import { kwis } from "./module/kwis.js";
+import {dropdownMenu} from "./module/dropdownMenu.js"
 // import { delyveryToggle } from "./module/delyvery.js";
 
 
@@ -47,4 +48,5 @@ documMain1()
 thumbnailMain()
 sliderMain4()
 kwis()
+dropdownMenu()
 // delyveryToggle()
