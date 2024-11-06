@@ -15,7 +15,7 @@
           <ul class="header__nav-list list-reset">
 
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">
+              <a class="header__nav-link" href="catalog-page.html">
                 Каталог
               </a>
             </li>
@@ -29,7 +29,7 @@
                 Контакты
               </a>
             </li>
-           
+
 
           </ul>
         </nav>
@@ -67,4 +67,62 @@
       </div>
     </div>
   </div>
+  <section class="dropdown-section section hidden" id="menu">
+
+    <div class="dropdown-conteiner container">
+        <div class="dropdown-content content">
+          <div class="dropdown-left">
+
+             <a class="dropdown-link" href="#">
+                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Proiz.svg","title": "Производство", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
+             "})</a>
+             <a class="dropdown-link" href="#">
+                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Novosti.svg","title": "Новости и блог", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
+             "})</a>
+             <a class="dropdown-link" href="#">
+                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Doci.svg","title": "Документация", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
+             "})</a>
+             <a class="dropdown-link" href="#">
+                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Otzivi.svg","title": "Отзывы", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
+             "})</a>
+             <a class="dropdown-link" href="#">
+                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Dostavka.svg","title": "Доставка и самовывоз", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
+             "})</a>
+             <a class="dropdown-link" href="#">
+                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Vopros.svg","title": "Вопрос-ответ", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
+             "})</a>
+
+          </div>
+           <div class="dropdown-right">
+            <div class="dropdown__right-form">
+              <!-- <h2 class="dropdown__title-form">У вас остались вопросы?</h2> -->
+                <form action="#" method="POST">
+                    <div class="form-name">
+                        <!-- <label for="name">Имя</label> -->
+                        <input type="text" id="name" name="name"
+                        placeholder="Ваше имя" required>
+                    </div>
+
+
+                    <div class="form-email">
+                        <!-- <label for="phone">Номер телефона</label> -->
+                        <input type="email" id="phone" name="phone"
+                        placeholder="Email">
+                    </div>
+                    <div class="form-tel">
+                      <!-- <label for="phone">Номер телефона</label> -->
+                      <input type="tel" id="phone" name="phone"
+                      placeholder="Телефон">
+                  </div>
+
+
+                    <button type="submit" class="submit-button">Проконсультироваться</button>
+                </form>
+            </div>
+       </div>
+        </div>
+    </div>
+
+
+  </section>
 </header>
