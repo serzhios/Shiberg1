@@ -3,11 +3,15 @@
 
 @use "mixin";
 
+@use "boxs/ivitation";
 
 @use 'boxs/footer';
 @use "boxs/header";
 @use "boxs/main-page";
+@use "boxs/catalog-page";
 @use "boxs/box-network";
+
+
 
 
 
@@ -20,6 +24,9 @@
 @use "components/card3.scss";
 @use "components/card2.scss";
 @use "components/dropdown-card.scss";
+@use "components/social-link.scss";
+@use "components/btn1.scss";
+@use "components/card-cat.scss"
 
 
 

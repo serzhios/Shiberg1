@@ -1,0 +1,112 @@
+.main {
+    .bid-main {
+        background: rgb(6, 130, 142);
+        background: linear-gradient(180deg, rgba(6, 130, 142, 1) 0%, rgba(21, 34, 42, 1) 100%);
+        padding: 63px 150px 64px 103px;
+
+        .bid-conteiner {
+
+            .bid-content {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                // gap: 120px;
+
+                .bid-left {
+
+                    p {
+                        text-align: left;
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        font-size: 33px;
+                        line-height: 145%;
+                        color: #fff;
+                        padding-bottom: 17px;
+                    }
+
+                    span {
+                        color: #67c0c8;
+
+                    }
+
+                    .bid-left-item {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 20px;
+
+                        .text {
+                            color: #fff;
+
+                        }
+                    }
+                }
+
+                .bid-right {
+
+                    // gap: 17px;
+                    .btn1 {
+                        width: 100%;
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 137%;
+                        color: #000;
+                    }
+
+                    .right-text {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        padding-top: 19px;
+
+                        p {
+                            // padding-right: 17px;
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 157%;
+                            color: #fff;
+                        }
+
+                        // justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+
+    .catalog-main {
+        .catalog-conteiner {
+            .catalog-content {
+                padding: 40px 0 42px 0;
+                text-align: left;
+
+                .catalog-title {
+                    padding-bottom: 33px;
+                    font-family: var(--second-family);
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 132%;
+                    color: #000;
+                }
+
+                .catalog-list {
+                    display: grid;
+                    grid-template-columns: repeat(7, auto);
+                    row-gap: 50px;
+                    column-gap:24px;
+
+                    // grid-template-rows: repeat(2 auto);
+                    .catalog-item {
+                        //     display: flex;
+                        //     flex-direction: row;
+                        //     justify-content: center;
+                        // align-items: center;
+
+                    }
+                }
+            }
+        }
+    }
+}
