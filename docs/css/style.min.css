@@ -3245,6 +3245,85 @@
   z-index: 1;
 }
 
+.main .catalog-main {
+  padding: 40px 0 56px 0;
+}
+.main .catalog-main .catalog-conteiner .catalog-content {
+  padding: 40px 0 42px 0;
+  text-align: left;
+}
+.main .catalog-main .catalog-conteiner .catalog-content .catalog-title {
+  padding-bottom: 33px;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 132%;
+  color: #000;
+}
+.main .catalog-main .catalog-conteiner .catalog-content .catalog-list {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  row-gap: 50px;
+  column-gap: 24px;
+}
+.main .filter-main {
+  padding: 0;
+}
+.main .filter-main .filter-conteiner .filter-content {
+  text-align-last: left;
+}
+.main .filter-main .filter-conteiner .filter-content .filter__block1 {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 185%;
+  color: #000;
+}
+.main .filter-main .filter-conteiner .filter-content .filter__block1 span {
+  padding-left: 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 132%;
+  text-align: center;
+  color: #9a9a9a;
+}
+.main .filter-main .filter-conteiner .filter-content .filter__block2 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.main .filter-main .filter-conteiner .filter-content .filter__block2-left {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  text-align: center;
+  color: #292929;
+}
+.main .filter-main .filter-conteiner .filter-content .filter__block2-left p {
+  align-items: center;
+  justify-content: center;
+}
+.main .filter-main .filter-conteiner .filter-content .filter__block2-left span {
+  font-weight: 600;
+}
+.main .filter-main .filter-conteiner .filter-content .filter__block2-right {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  justify-content: space-between;
+}
+.main .filter-main .filter-conteiner .filter-content .filter__block3-left {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  text-align: center;
+  color: #292929;
+}
+.main .filter-main .filter-conteiner .filter-content .filter__block3-left span {
+  font-weight: 600;
+}
 .main .bid-main {
   background: rgb(6, 130, 142);
   background: linear-gradient(180deg, rgb(6, 130, 142) 0%, rgb(21, 34, 42) 100%);
@@ -3296,24 +3375,7 @@
   line-height: 157%;
   color: #fff;
 }
-.main .catalog-main .catalog-conteiner .catalog-content {
-  padding: 40px 0 42px 0;
-  text-align: left;
-}
-.main .catalog-main .catalog-conteiner .catalog-content .catalog-title {
-  padding-bottom: 33px;
-  font-family: var(--second-family);
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 132%;
-  color: #000;
-}
-.main .catalog-main .catalog-conteiner .catalog-content .catalog-list {
-  display: grid;
-  grid-template-columns: repeat(7, auto);
-  row-gap: 50px;
-  column-gap: 24px;
-}
+
 .list-link {
   display: flex;
   gap: 10px;
@@ -3776,4 +3838,51 @@ body {
 }
 .card-cat .cat-desc span {
   padding-left: 10px;
+}
+
+.catalog-btn {
+  border: 1px solid rgba(6, 130, 142, 0.6);
+  border-radius: 2px;
+  padding: 6px 16px;
+  display: inline-block; /* Делает кнопку блочным элементом, но который может стоять рядом с другими элементами */
+  text-align: center; /* Выравнивание текста по центру */
+  white-space: nowrap;
+  height: 33px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(31, 30, 30, 0.6);
+  position: relative;
+}
+
+.catalog-btn.selected {
+  background-color: #87c1d9;
+  color: #fff;
+}
+
+.catalog-btn:hover {
+  background-color: #e3f3fa;
+}
+
+.catalog-btn.active {
+  background-color: #87c1d9;
+  color: #fff;
+}
+
+.catalog-btn.active::before, .catalog-btn.active:after {
+  content: "";
+  position: absolute;
+  top: 45%; /* позиция пересечения */
+  left: 0;
+  width: 15px;
+  height: 3.13px; /* толщина линий */
+  background-color: #fff;
+}
+
+.catalog-btn.active::before {
+  transform: rotate(45deg);
+}
+
+.catalog-btn.active::after {
+  transform: rotate(-45deg);
 }

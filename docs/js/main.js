@@ -9,7 +9,7 @@ import{sliderMain4} from "./module/sliderMain4.js"
 import { kwis } from "./module/kwis.js";
 import {dropdownMenu} from "./module/dropdownMenu.js"
 // import { delyveryToggle } from "./module/delyvery.js";
-
+import { catalogBtn } from "./module/catalogBtn.js";
 
 
 document.querySelectorAll('.section6-list').forEach(function(item) {
@@ -50,3 +50,4 @@ sliderMain4()
 kwis()
 dropdownMenu()
 // delyveryToggle()
+catalogBtn()
