@@ -10,7 +10,7 @@ import { kwis } from "./module/kwis.js";
 import {dropdownMenu} from "./module/dropdownMenu.js"
 // import { delyveryToggle } from "./module/delyvery.js";
 import { catalogBtn } from "./module/catalogBtn.js";
-
+import{catalogSlider} from "./module/catalogSlider.js"
 
 document.querySelectorAll('.section6-list').forEach(function(item) {
     item.addEventListener('click', function() {
@@ -47,7 +47,8 @@ categoryMain1()
 documMain1()
 thumbnailMain()
 sliderMain4()
-kwis()
+// kwis()
 dropdownMenu()
 // delyveryToggle()
 catalogBtn()
+catalogSlider()

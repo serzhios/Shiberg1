@@ -10,6 +10,8 @@ export function dropdownMenu(){
             if (menu.classList.contains('hidden') && !isLogoBig) {
                 logo.style.width = '203px';
                 logo.style.height ='36px';
+                // logo.style.marginRight= "20px"
+                // logo.style.margin = '10px 20px 30px 40px';
                 isLogoBig = true;
                 menu.classList.remove('hidden');
             } else {

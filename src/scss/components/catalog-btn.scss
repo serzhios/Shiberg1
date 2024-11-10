@@ -26,6 +26,7 @@ position:relative;
 .catalog-btn.active {
     background-color: #87c1d9;
     color: #fff;
+    // padding-left: 10px;
 
 }
 .catalog-btn.active::before, .catalog-btn.active:after {
@@ -38,6 +39,7 @@ position:relative;
             height: 3.13px; /* толщина линий */
             background-color: #fff;
         //     margin-left: 10px;
+        // padding: 10px;
         //    margin-right: 10px;
 
 }

@@ -7,7 +7,12 @@ export function catalogBtn(){
                 document.querySelectorAll('.catalog-btn').forEach(btn => btn.classList.remove('active'));
 
                 // Добавляем активный класс на текущую нажатую кнопку
-                button.classList.toggle('active');
+                // button.classList.remove('active');
+                if (button.classList.contains('active')) {
+                    button.classList.remove('active'); // Убираем класс 'active'
+                } else {
+                    button.classList.add('active'); // Добавляем класс 'active'
+                }
 
 
 
