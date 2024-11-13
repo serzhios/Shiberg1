@@ -3,13 +3,15 @@
 
 @use "mixin";
 
-@use "boxs/ivitation";
 
 @use 'boxs/footer';
 @use "boxs/header";
 @use "boxs/main-page";
 @use "boxs/catalog-page";
-@use "boxs/box-network";
+@use "boxs/reviews-page";
+@use "boxs/contacts-page.scss";
+@use "boxs/box-network.scss";
+@use "boxs/ivitation.scss";
 
 
 
@@ -30,6 +32,10 @@
 @use "components/catalog-btn.scss";
 @use "components/cart-cat2.scss";
 @use "components/btn3.scss";
+@use "components/breadcrumbs.scss";
+// @use "components/box-network.scss";
+// @use "components/ivitation.scss";
+
 
 
 

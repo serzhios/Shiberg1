@@ -11,6 +11,7 @@ import {dropdownMenu} from "./module/dropdownMenu.js"
 // import { delyveryToggle } from "./module/delyvery.js";
 import { catalogBtn } from "./module/catalogBtn.js";
 import{catalogSlider} from "./module/catalogSlider.js"
+import {reviewsSlider1} from "./module/reviewsSlider1.js"
 
 document.querySelectorAll('.section6-list').forEach(function(item) {
     item.addEventListener('click', function() {
@@ -52,3 +53,4 @@ dropdownMenu()
 // delyveryToggle()
 catalogBtn()
 catalogSlider()
+reviewsSlider1()
