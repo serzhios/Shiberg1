@@ -1,7 +1,33 @@
-<header class="header" id="header">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Производство</title>
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="js/swiper-bundle.min.js.map" defer></script>
+  <script src="js/fslightbox-min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="js/main-min.js"></script>
+</head>
+
+</head>
+<body>
+    <header class="header" id="header">
   <div class="header__container container">
     <div class="header__content">
-      @@include('../components/logo.html')
+      <div class="box-logo">
+  <a class="link-logo" href="/">
+    <img class ="logo-img" src="../../img/main/logo_wh.png" alt="">
+
+  </a>
+
+</div>
       <div class="header__box-nav-btn">
         <div class="dropdown">
           <button class="header__nav-btn" id="menuButton">
@@ -74,23 +100,83 @@
           <div class="dropdown-left">
 
              <a class="dropdown-link" href="production-page.html">
-                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Proiz.svg","title": "Производство", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
-             "})</a>
+                 <div class="dropwond-card">
+    <div class="dropdown-card-block">
+        <div class="dropdown__card-img">
+            <img class="dropdown-img" src="/img/main/Proiz.svg" alt="img">
+<p class="dropdown-title">  Производство </p>
+        </div>
+                <p class="dropdown__card-deck">
+                    Не нарушаем дизайн интерьера<br> функциональными решениями               
+                </p>
+    </div>
+
+</div></a>
              <a class="dropdown-link" href="#">
-                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Novosti.svg","title": "Новости и блог", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
-             "})</a>
+                 <div class="dropwond-card">
+    <div class="dropdown-card-block">
+        <div class="dropdown__card-img">
+            <img class="dropdown-img" src="/img/main/Novosti.svg" alt="img">
+<p class="dropdown-title">  Новости и блог </p>
+        </div>
+                <p class="dropdown__card-deck">
+                    Не нарушаем дизайн интерьера<br> функциональными решениями               
+                </p>
+    </div>
+
+</div></a>
              <a class="dropdown-link" href="#">
-                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Doci.svg","title": "Документация", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
-             "})</a>
+                 <div class="dropwond-card">
+    <div class="dropdown-card-block">
+        <div class="dropdown__card-img">
+            <img class="dropdown-img" src="/img/main/Doci.svg" alt="img">
+<p class="dropdown-title">  Документация </p>
+        </div>
+                <p class="dropdown__card-deck">
+                    Не нарушаем дизайн интерьера<br> функциональными решениями               
+                </p>
+    </div>
+
+</div></a>
              <a class="dropdown-link" href="reviews-page.html">
-                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Otzivi.svg","title": "Отзывы", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
-             "})</a>
+                 <div class="dropwond-card">
+    <div class="dropdown-card-block">
+        <div class="dropdown__card-img">
+            <img class="dropdown-img" src="/img/main/Otzivi.svg" alt="img">
+<p class="dropdown-title">  Отзывы </p>
+        </div>
+                <p class="dropdown__card-deck">
+                    Не нарушаем дизайн интерьера<br> функциональными решениями               
+                </p>
+    </div>
+
+</div></a>
              <a class="dropdown-link" href="#">
-                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Dostavka.svg","title": "Доставка и самовывоз", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
-             "})</a>
+                 <div class="dropwond-card">
+    <div class="dropdown-card-block">
+        <div class="dropdown__card-img">
+            <img class="dropdown-img" src="/img/main/Dostavka.svg" alt="img">
+<p class="dropdown-title">  Доставка и самовывоз </p>
+        </div>
+                <p class="dropdown__card-deck">
+                    Не нарушаем дизайн интерьера<br> функциональными решениями               
+                </p>
+    </div>
+
+</div></a>
              <a class="dropdown-link" href="#">
-                 @@include('../components/dropdown-card.html', {"urlImg": "/img/main/Vopros.svg","title": "Вопрос-ответ", "desc": "Не нарушаем дизайн интерьера<br> функциональными решениями
-             "})</a>
+                 <div class="dropwond-card">
+    <div class="dropdown-card-block">
+        <div class="dropdown__card-img">
+            <img class="dropdown-img" src="/img/main/Vopros.svg" alt="img">
+<p class="dropdown-title">  Вопрос-ответ </p>
+        </div>
+                <p class="dropdown__card-deck">
+                    Не нарушаем дизайн интерьера<br> функциональными решениями               
+                </p>
+    </div>
+
+</div></a>
 
           </div>
            <div class="dropdown-right">
@@ -126,3 +212,48 @@
 
   </section>
 </header>
+<main class="main">
+    <div class="line"></div>
+    <section class="reviews-main  ">
+
+
+        <div class="container reviews-conteiner">
+
+          <div class="content reviews-content">
+
+            <div class="reviews-breadcrumbs">
+    <a href="main.html" class="reviews-breadcrumbs__item1">Главная</a>
+    <span class="reviews-breadcrumbs__line">-</span>
+<span class="reviews-breadcrumbs__item2">Производство</span>
+    </div>
+
+
+
+
+
+
+          </div>
+        </div>
+      </section>
+      <section class=" gratings-main">
+        <div class="container gratings-conteiner">
+            <div class="content gratings-content">
+    <img class="gratings-img"src="img/production/img1.png" alt="">
+<div class="gratings__block">
+    <p class="gratings__block-text">Как мы делаем<br> невидимые решетки<br> SCHIBERG</p>
+    <div class="gratings__block-title"><svg width="252" height="68" viewBox="0 0 252 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M28 40C84.0242 13.2779 181.738 56.1739 224 28" stroke="#06828E" stroke-width="54.1491" stroke-linecap="round" />
+      </svg></div>
+</div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+</main>
+
+</body>
+</html>
