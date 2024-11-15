@@ -1,0 +1,47 @@
+.main{
+
+    // .content {
+    //     max-width: 1200px;
+    //     margin: 0 auto;
+    // }
+
+.gratings-main{
+    .gratings-conteiner{
+        min-width: 1200px;
+        margin: 0 auto;
+        .gratings-content{
+            position:relative;
+.gratings-img{
+    width: 100%;
+}
+.gratings__block{
+    position: absolute;
+    top: 100px;
+    left: 71px;
+    &-text{
+        position:relative;
+
+        text-align: left;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 118%;
+        color: #fff;
+        z-index: 999;
+    }
+    &-title{
+        position: absolute;
+        top: 88px;
+        left: -21px;
+z-index: 0;
+    }
+
+}
+
+        }
+    }
+}
+
+
+
+}
