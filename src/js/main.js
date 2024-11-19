@@ -12,7 +12,7 @@ import {dropdownMenu} from "./module/dropdownMenu.js"
 import { catalogBtn } from "./module/catalogBtn.js";
 import{catalogSlider} from "./module/catalogSlider.js"
 import {reviewsSlider1} from "./module/reviewsSlider1.js"
-
+import {stageSlider} from "./module/stageSlider.js"
 document.querySelectorAll('.section6-list').forEach(function(item) {
     item.addEventListener('click', function() {
         this.classList.toggle('active'); // Добавляем/удаляем класс "active" при клике
@@ -54,3 +54,4 @@ dropdownMenu()
 catalogBtn()
 catalogSlider()
 reviewsSlider1()
+stageSlider()
