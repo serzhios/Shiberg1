@@ -243,13 +243,13 @@
                     .stage-next {
                         position: absolute;
                         bottom: 10%;
-                        right: 3%;
+                        right: 2%;
                         border-radius: 10px;
                         padding: 11px 21px;
                         width: 184px;
                         height: 44px;
                         background: #fff;
-                        z-index: 1;
+                        z-index: 9999;
                         cursor: pointer;
 
                         span {
@@ -264,36 +264,36 @@
                     .stage-prev {
                         position: absolute;
                         bottom: 10%;
-                        left: 3%;
+                        left: 2%;
                         // border-radius: 10px;
                         // padding: 11px 21px;
                         // width: 184px;
                         // height: 44px;
                         // background: #fff;
-                        z-index: 1;
+                        z-index: 9999;
                         cursor: pointer;
 
 
                     }
 
                     .swiper-pagination {
+                        position: absolute;
+                        bottom: 10%;
+                        left: 0%;
                         font-family: var(--font-family);
                         font-weight: 700;
                         font-size: 30px;
                         line-height: 159%;
-                        color: #51cbd6;
-                    //    &-active {
-                    //         color:#3d0e0e
-                    //     }
+                        color: #fff;
 
                     }
-                    // .swiper-pagination-bullet {
-                    //     color: #000; /* Цвет неактивных точек */
-                    //   }
 
-                      .swiper-pagination-bullet-active {
-                        color: rgb(102, 32, 32) !important; /* Цвет активной точки */
-                      }
+                    .swiper-pagination-current {
+                        color: #51cbd6;
+
+
+                    }
+
 
 
                 }
@@ -302,6 +302,122 @@
 
 
 
+        }
+    }
+
+    .advantages-main {
+
+        .advantages-conteiner {
+            .advantages-content {
+                .advantages-title {
+                    font-family: var(--second-family);
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 149%;
+                    color: #000;
+                    margin-bottom: 39px;
+                }
+
+                .advantages__block {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+        }
+    }
+
+    .beware-main {
+        .beware-conteiner {
+            padding: 100px 0 47px 0;
+
+            .beware-content {
+                .beware-title {
+                    font-family: var(--second-family);
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 149%;
+                    color: #000;
+                    margin-bottom: 37px;
+                }
+
+                .beware__block {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 48px;
+
+                    .beware__block-left {
+                        border-radius: 10px;
+                        // width: 511px;
+height: 293px;
+                        .beware-img {
+                            width: 100%;
+                        }
+                    }
+
+                    .beware__block-right {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .beware__block1,
+                        .beware__block2 {
+                            margin-bottom: 20px;
+
+                            .beware__block1-title,
+                            .beware__block-title {
+                                margin-bottom: 10px;
+
+                                span {
+                                    font-family: var(--font-family);
+                                    font-weight: 600;
+                                    font-size: 25px;
+                                    line-height: 135%;
+                                    color: #000;
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .beware__block1-subtitle,
+                            .beware__block-subtitle {
+                                font-family: var(--font-family);
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 131%;
+                                color: #000;
+                            }
+                        }
+
+                        .beware-button {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            text-align: center;
+                            padding: 12px 47px 12px 47px;
+                            border-radius: 13px;
+                            width: 12.6875rem;
+                            // height: 45px;
+                            background: #06828e;
+                            font-family: var(--font-family);
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 131%;
+                            color: #fff;
+                            // span{
+                            //     padding-right: 5px;
+                            // }
+                        }
+                    }
+                }
+
+                .beware-subtitle {
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 130%;
+                    color: #000;
+                    margin-top: 10px;
+                }
+            }
         }
     }
 }
