@@ -37,7 +37,7 @@ export function documMain1(){
                 // Скрываем все блоки с контентом
                 document.querySelectorAll('.documentation__down').forEach(content => content.classList.remove('active'));
 
-                // Показываем выбранный блок
+                // Показываем выбранный блок/////
                 document.getElementById(target).classList.add('active');
             });
         });
