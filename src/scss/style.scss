@@ -13,6 +13,7 @@
 @use "boxs/box-network";
 @use "boxs/ivitation";
 @use "boxs/production-page";
+@use "boxs/question-page";
 
 
 
@@ -38,6 +39,7 @@
 @use "components/production-cart.scss";
 @use"components/production-item.scss";
 @use "components/advantages-cart.scss";
+@use "components/instructions-cart.scss";
 // @use "components/box-network.scss";
 // @use "components/ivitation.scss";
 
